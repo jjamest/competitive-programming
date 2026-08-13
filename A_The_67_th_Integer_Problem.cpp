@@ -85,6 +85,10 @@ const long long LL_INF = numeric_limits<long long>::max();
 
 void solve()
 {
+    int x;
+    cin >> x;
+
+    cout << x << endl;
 }
 
 int32_t main()

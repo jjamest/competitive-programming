@@ -85,6 +85,22 @@ const long long LL_INF = numeric_limits<long long>::max();
 
 void solve()
 {
+    priority_queue<int, vector<int>, greater<int>> minHeap;
+    for (int i = 0; i < 7; i++)
+    {
+        int a;
+        cin >> a;
+        minHeap.push(a);
+    }
+
+    int sum = 0;
+    while (minHeap.size() > 1)
+    {
+        int top = minHeap.top();
+        minHeap.pop();
+        sum += -top;
+    }
+    cout << sum + minHeap.top() << endl;
 }
 
 int32_t main()

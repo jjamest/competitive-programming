@@ -1,5 +1,4 @@
-.*
-*.exe
-*.bin
+*
+!*.cpp
 
 !.gitignore
